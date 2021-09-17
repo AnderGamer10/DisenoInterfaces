@@ -1,0 +1,17 @@
+{
+  "name": "Diseno",
+  "version": "0.0.1",
+  "description": "Exercise one",
+  "repository": "https://github.com/AnderGamer10/Dise-o.git",
+  "author": "AnderGamer10 <anderedondo10@hotmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "parcel build index.html",
+    "start": "parcel serve index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "parcel": "^2.0.0-rc.0"
+  }
+}
