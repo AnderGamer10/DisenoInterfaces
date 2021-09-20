@@ -5,11 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>
+        <block name="title"><include src="./partial/title.html"/></block>
+    </title>
     <link rel="stylesheet" href="styles/main.sass">
 </head>
 <body>
     <header>
+        <block name="header"><include src="./partial/header.html"/></block>
         <nav class="menu" role='navigation'>
             <ol>
                 <li class="menu-item"><a href="#0">Inicio</a></li>
@@ -37,13 +40,13 @@
     </header>
 
     <section>
-
+        <block name="content"><include src="./partial/content.html"/></block>
     </section>
     <aside>
-
+        <block name="sidebar"><include src="./partial/sidebar.html"/></block>
     </aside>
     <footer>
-
+        <block name="footer"><include src="./partial/footer.html"/></block>
     </footer>
 </body>
 </html>
