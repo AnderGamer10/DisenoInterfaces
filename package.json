@@ -1,20 +1,25 @@
 {
   "name": "dos",
   "version": "0.0.2",
-  "description": "Exercise two",
-  "repository": "https://github.com/mmozos/DIW",
-  "author": "mmozos <martinmozos@gmail.com>",
+  "description": "Ejercicio Poniendolo Negro",
+  "repository": "https://github.com/AnderGamer10/DisenoInterfaces.git",
+  "author": "AnderGamer10 <anderedondo10@hotmail.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "parcel build *.html",
-    "start": "parcel serve *.html --open"
+    "build": "parcel build templates/*.html",
+    "prebuild": "posthtml -o dist -i templates/index.html templates/form.html -c .posthtmlrc",
+    "prestart": "posthtml -o dist -i templates/index.html templates/form.html -c .posthtmlrc",
+    "start": "parcel serve templates/*.html --open"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
     "@parcel/transformer-sass": "2.0.0-rc.0",
-    "autoprefixer": "^10.3.6",
+    "autoprefixer": "^10.3.7",
     "parcel": "^2.0.0-rc.0",
+    "postcss-uncss": "^0.17.0",
+    "posthtml-cli": "^0.10.0",
     "posthtml-extend": "^0.6.0",
-    "posthtml-include": "^1.7.1"
+    "posthtml-include": "^1.7.2"
   }
 }
